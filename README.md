@@ -11,5 +11,7 @@ Strona powstała na podstawie strony Warszawa JUG (jakubnabrdalik/wjug).
   sudo make install
 
 * wróć do katalogu projektu, zainicjuj i odpal
+
   ./scripts/init.sh
+
   ./scripts/server.sh
