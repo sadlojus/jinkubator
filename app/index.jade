@@ -6,7 +6,7 @@ html(lang='en', ng-app='app')
         meta(name='viewport', content='width=device-width', initial-scale='2.0')
         meta(name='description', content='')
         meta(name='author', content='')
-        title(ng-bind-template='{{pageTitle}}')
+        title(ng-bind-template='Jinkubator')
         link(rel='stylesheet', href='css/app.css')
         //-script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
         //if lte IE 7
@@ -29,10 +29,16 @@ html(lang='en', ng-app='app')
             .main-content
                 div(ng-switch="subview").subview
                     div(ng-switch-when="loading", ui-animate)
-                        p loading...
-                    div(ng-switch-when="page1", ng-include=" 'partials/main_page.html' ", ui-animate)
+                            .section(page='1')
+                                .centered
+                                    .container
+                                        .row
+                                            .span12
+                                                p loading...
+                    div(ng-switch-when="main_page", ng-include=" 'partials/main_page.html' ", ui-animate)
+                    div(ng-switch-when="prelegents", ng-include=" 'partials/prelegents.html' ", ui-animate)
                     div(ng-switch-when="meeting1", ng-include=" 'partials/meeting/1.html' ", ui-animate)
-                    // {tu kolejne spotkania}
+                    //{next_meetings}
             .push
 
         .footer

@@ -4,14 +4,14 @@ div
             .container
                 .row
                     .span12
-                        h4 1 Spotkanie
+                        h4 {num} Spotkanie
                         h2 {subject}
-                        h3 Ktoś Ktosiński
+                        h3 {prelegent_name}
                         p Termin: {date}
                         p Lokalizacja: {loc}
                         h3 O prezentacji:
                         p 
                         | {meeting_desc}
                         h3 O prelegencie:
-                        include ../prelegent/ktos
+                        include ../prelegent/{prelegent_id}
 

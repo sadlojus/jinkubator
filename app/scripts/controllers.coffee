@@ -50,7 +50,7 @@ angular.module('app.controllers', [])
 			$scope.$watch('$location.path()', (path) ->
 				$scope.activeNavId = path || '/'
 			)
-
+			
 			# getClass compares the current url with the id.
 			# If the current url starts with the id it returns 'active'
 			# otherwise it will return '' an empty string. E.g.
@@ -77,7 +77,7 @@ angular.module('app.controllers', [])
 
 		($scope, requestContext, $window, $timeout, $rootScope, sectionScroller) ->
 
-			renderContext = requestContext.getRenderContext requestContext.getRenderContext().getNextSection()
+			renderContext = requestContext.getRenderContext requestContext.getRenderContext().getNextSection(), ['meetingId', 'prelegentId']
 
 			$timeout ->
 				sectionScroller renderContext.getNextSection(), 0

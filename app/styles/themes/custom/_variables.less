@@ -29,18 +29,19 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
-@logoRed:               rgb(229, 82, 55);
-
+@myDarkGreen:           #455b00;
+@myGreen:               lighten(@myDarkGreen, 20%);
+@myOrange:              @orange;
 
 // Scaffolding
 // -------------------------
 @bodyBackground:        @grayDarker;
-@textColor:             @grayLight;
+@textColor:             @grayLighter;
 
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             @myGreen;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -63,7 +64,7 @@
 
 @headingsFontFamily:    @headFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    400;    // instead of browser default, bold
-@headingsColor:         @blue; // empty to use BS default, @textColor
+@headingsColor:         @myGreen; // empty to use BS default, @textColor
 
 
 // Component sizing

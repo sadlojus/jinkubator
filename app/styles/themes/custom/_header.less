@@ -9,7 +9,7 @@
     height: @height;
     width: 100%;
     z-index: 1000;
-    background: fade(@black, 60%);
+    background: fade(@myGreen, 75%);
     font-family: @headFontFamily;
 
     .brand {
@@ -18,7 +18,9 @@
       width: @brandHeight;
       height: @height;
       text-indent: -1000px;
-      background: url("../img/WarszawaJUG-new2.png") no-repeat;
+      background: url("../img/jinkubator_logo.png") no-repeat;
+      background-size: contain;
+      background-position: center;
     }
 
     .nav {
@@ -35,7 +37,7 @@
           padding-right: 10px;
 
           a {
-            color: @logoRed;
+            color: @myOrange;
             font-size: 26px;
             line-height: 21px;
             font-weight: normal;
@@ -49,9 +51,9 @@
           &.active {
             a {
               color: @white;
-              &:focus {
-                color: @blue;
-              }
+       //       &:focus {
+       //         color: @myDarkGreen;
+       //       }
             }
           }
         }

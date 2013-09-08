@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width" initial-scale="2.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title ng-bind-template="{{pageTitle}}"></title>
+    <title ng-bind-template="Jinkubator"></title>
     <link rel="stylesheet" href="css/app.css">
     <!--[if lte IE 7]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js"></script>
@@ -33,11 +33,22 @@
       <div class="main-content">
         <div ng-switch="subview" class="subview">
           <div ng-switch-when="loading" ui-animate>
-            <p>loading...</p>
+            <div page="1" class="section">
+              <div class="centered">
+                <div class="container">
+                  <div class="row">
+                    <div class="span12">
+                      <p>loading...</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div ng-switch-when="page1" ng-include=" 'partials/main_page.html' " ui-animate></div>
+          <div ng-switch-when="main_page" ng-include=" 'partials/main_page.html' " ui-animate></div>
+          <div ng-switch-when="prelegents" ng-include=" 'partials/prelegents.html' " ui-animate></div>
           <div ng-switch-when="meeting1" ng-include=" 'partials/meeting/1.html' " ui-animate></div>
-          <!-- {tu kolejne spotkania}-->
+          <!--{next_meetings}-->
         </div>
       </div>
       <div class="push"></div>

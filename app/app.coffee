@@ -19,13 +19,13 @@ App.config([
   ($routeProvider, $locationProvider, config) ->
     $routeProvider
 
-      .when('/about', action: 'page1.about')
-      .when('/meetings', action: 'page1.meetings')
-      .when('/sponsors', action: 'page1.sponsors')
-      .when('/partners', action: 'page1.partners')
-      
-    for num in [1..20]
-      $routeProvider.when("/meeting/#{num}", action: "meeting#{num}")
+      .when('/about', action: 'main_page.about')
+      .when('/meetings', action: 'main_page.meetings')
+      .when('/cooperation', action: 'main_page.cooperation')
+      .when('/partners', action: 'main_page.partners')
+      .when('/prelegents', action: 'prelegents.top')
+      .when("/prelegents/:prelegentId", action: 'prelegents')
+      .when("/meeting/:meetingId", action: 'meeting')
 
     # Catch all
     $routeProvider.otherwise({redirectTo: '/about'})

@@ -176,8 +176,13 @@ angular.module('app.services', [])
 				previousParams = params
 
 				# Set the action.
-				action = newAction
-
+				if newRouteParams.prelegentId
+					action = newAction + '.' + newRouteParams.prelegentId
+				else if newRouteParams.meetingId
+					action = newAction + newRouteParams.meetingId
+				else
+					action = newAction
+				
 				# Split the action to determine the sections.
 				sections = action.split(".")
 				# Update the params collection.
