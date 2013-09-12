@@ -10,6 +10,10 @@ Strona powstała na podstawie strony Warszawa JUG (jakubnabrdalik/wjug).
 
   sudo make install
 
+  npm install marked --save
+
+* Ściągnij i zainicjuj angular-bruch-seed
+
 * wróć do katalogu projektu, zainicjuj i odpal
 
   ./scripts/init.sh
