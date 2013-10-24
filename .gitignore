@@ -8,6 +8,8 @@ node_modules/
 #generated content
 _public/
 app/assets/index.html
+app/assets/partials/main_page_parts/*.html
+app/assets/partials/prelegent/*.html
 app/assets/partials/*.html
 app/assets/partials/meeting/*.html
 *~
