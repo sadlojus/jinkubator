@@ -5,10 +5,32 @@ div(ng-controller="PageCtrl")
                 .row
                     #top.span12
                         h1 Prelegenci
-                        h3 Zostań prelegentem
+                        h2 Zostań prelegentem
+                        p Jeżeli masz ochotę pokazać coś trochę mniej doświadczonym programistom to zachęcamy do zgłaszania tematów w 
+                            a(href="https://docs.google.com/forms/d/1Zt_ws-STBfDESwI1rzhBmKcbWPQnGtsvRnIksESl2BI/viewform") formularzu
+                            | .
+                        p Preferowane przez nas tematy kręcą się wokół Javy - bibliotek frameworków. W szczególności:
+                            ul
+                                li: popularne technologie i biblioteki związane z Javą
+                                li: dobre praktyki programistyczne
+                                li: zaawansowane zagadnienia Javy (refleksja, adnotacje, typy generyczne)
+                                li: dobre środowisko programistyczne - używanie IDE, maven/gradle, continous integration, system kontroli wersji
+                                li: testowanie oprogramowania
+                                li: “okolice" programowania - planowanie kariery, możliwe ścieżki rozwoju itp.
+                  
+                .row
+                        h2 Dotychczas wystąpili
+
+                        mixin prelegent(name, id)
+                            #id.row
+                                .span2
+                                    img(src='img/prelegent/'+id+'.jpg', alt='')
+                                .span10
+                                    h3= name
+                                    block
                         
-                        h3 Dotychczas wystąpili
-                        p Tu wkrótce pojawią się informacje o naszych prelegentach
-                        //#{id}.section.span11
-                        //    h4 {imie i nazwisko}
-                        //    include prelegent/{id}
+
+                        +prelegent("Arkadiusz Konior", "arkadiusz_konior")
+                            include prelegent/arkadiusz_konior
+                            h4 Poprowadzone spotkania
+                            include prelegent_meetings/arkadiusz_konior
