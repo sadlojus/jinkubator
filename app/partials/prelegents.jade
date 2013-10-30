@@ -18,14 +18,14 @@ div(ng-controller="PageCtrl")
                                 li: testowanie oprogramowania
                                 li: “okolice" programowania - planowanie kariery, możliwe ścieżki rozwoju itp.
                   
-                .row
+                        div.fixedHeight
                         h2 Dotychczas wystąpili
 
                         mixin prelegent(name, id)
-                            #id.row
+                            div.row.section(id=id)
                                 .span2
                                     img(src='img/prelegent/'+id+'.jpg', alt='')
-                                .span10
+                                .span9
                                     h3= name
                                     block
                         
