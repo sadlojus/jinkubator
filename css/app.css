@@ -7513,3 +7513,22 @@ bootstrap, so the may override it's behavior.
   background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.4);
   text-shadow: 1px 1px 1px #000000;
 }
+.row {
+  margin-left: -20px;
+}
+.fixedHeight {
+  margin-top: 50px;
+}
+.otherLogos {
+  margin-bottom: 20px;
+}
+.otherLogos .row {
+  margin-bottom: 20px;
+}
+.otherLogo {
+  height: 100px;
+}
+#scalania {
+  font-size: x-large;
+  color: #cc8400;
+}
