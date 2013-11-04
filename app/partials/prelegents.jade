@@ -11,12 +11,12 @@ div(ng-controller="PageCtrl")
                             | .
                         p Preferowane przez nas tematy kręcą się wokół Javy - bibliotek frameworków. W szczególności:
                             ul
-                                li: popularne technologie i biblioteki związane z Javą
-                                li: dobre praktyki programistyczne
-                                li: zaawansowane zagadnienia Javy (refleksja, adnotacje, typy generyczne)
-                                li: dobre środowisko programistyczne - używanie IDE, maven/gradle, continous integration, system kontroli wersji
-                                li: testowanie oprogramowania
-                                li: “okolice" programowania - planowanie kariery, możliwe ścieżki rozwoju itp.
+                                li: span popularne technologie i biblioteki związane z Javą
+                                li: span dobre praktyki programistyczne
+                                li: span zaawansowane zagadnienia Javy (refleksja, adnotacje, typy generyczne)
+                                li: span dobre środowisko programistyczne - używanie IDE, maven/gradle, continous integration, system kontroli wersji
+                                li: span testowanie oprogramowania
+                                li: span “okolice" programowania - planowanie kariery, możliwe ścieżki rozwoju itp.
                   
                         div.fixedHeight
                         h2 Dotychczas wystąpili
@@ -34,3 +34,8 @@ div(ng-controller="PageCtrl")
                             include prelegent/arkadiusz_konior
                             h4 Poprowadzone spotkania
                             include prelegent_meetings/arkadiusz_konior
+
+                        +prelegent("Adam Chudzik", "adam_chudzik")
+                            include prelegent/adam_chudzik
+                            h4 Poprowadzone spotkania
+                            include prelegent_meetings/adam_chudzik
