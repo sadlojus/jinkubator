@@ -10,6 +10,6 @@ _public/
 app/assets/index.html
 app/assets/partials/main_page_parts/*.html
 app/assets/partials/prelegent/*.html
-app/assets/partials/
+app/assets/partials/prelegent_meetings/*
 app/assets/partials/meeting/*.html
 *~
